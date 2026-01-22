@@ -107,3 +107,42 @@ body {
   color: #00adb5;
 }
 
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.project-card {
+  background: #181818;
+  padding: 26px;
+  border-radius: 14px;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-type {
+  color: #00adb5;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.project-links {
+  margin-top: 18px;
+}
+
+.project-links a {
+  margin-right: 12px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  background: #00adb5;
+  color: black;
+  font-weight: bold;
+}
+
+
