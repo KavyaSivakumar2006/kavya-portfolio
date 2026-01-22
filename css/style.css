@@ -28,3 +28,82 @@ body {
   border-radius: 6px;
   font-weight: bold;
 }
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 40px;
+  background: rgba(15,15,15,0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #eee;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #00adb5;
+}
+
+.section {
+  padding: 100px 12%;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.card {
+  background: #181818;
+  padding: 22px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.tagline {
+  max-width: 650px;
+  margin: 20px auto;
+  opacity: 0.85;
+}
+
+.focus {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 25px 0;
+}
+
+.focus span {
+  border: 1px solid #00adb5;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.secondary {
+  background: transparent;
+  border: 1px solid #00adb5;
+  color: #00adb5;
+}
+
