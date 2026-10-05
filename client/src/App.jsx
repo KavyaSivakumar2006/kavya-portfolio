@@ -242,6 +242,7 @@ function App() {
               <h3>
                 <i className="fas fa-graduation-cap"></i> Education
               </h3>
+
               <p>
                 B.Tech Information Technology
                 <br />
@@ -255,6 +256,7 @@ function App() {
               <h3>
                 <i className="fas fa-code"></i> Focus
               </h3>
+
               <p>
                 AI/ML, Full Stack Development,
                 Cloud and DevOps.
@@ -265,6 +267,7 @@ function App() {
               <h3>
                 <i className="fas fa-lightbulb"></i> Approach
               </h3>
+
               <p>
                 Learn by building practical projects
                 and solving real-world problems.
@@ -354,7 +357,10 @@ function App() {
 
         <div className="projects-grid">
           {displayedProjects.map((project) => (
-            <div className="project-card" key={project._id || project.title}>
+            <div
+              className="project-card"
+              key={project._id || project.title}
+            >
               <div className="project-header">
                 <div className="project-icon">
                   <i className="fas fa-code"></i>
@@ -424,58 +430,68 @@ function App() {
 
         <div className="achievements-list">
           <div className="achievement-item">
-            <div className="achievement-icon">🏆</div>
+            <div className="achievement-icon">IRC-2026</div>
 
-            <h3>International Rover Challenge 2026</h3>
+            <div>
+              <h3>International Rover Challenge 2026</h3>
 
-            <p>
-              QBOTIX Rover from Kumaraguru College of Technology achieved
-              <strong> AIR 13 among 35 teams</strong>.
-            </p>
+              <p>
+                QBOTIX Rover from Kumaraguru College of Technology achieved
+                <strong> AIR 13 among 35 teams</strong>.
+              </p>
+            </div>
           </div>
 
           <div className="achievement-item">
-            <div className="achievement-icon">🤖</div>
+            <div className="achievement-icon">ROS2-AI Member Recognition</div>
 
-            <h3>ROS2 & AI — QBOTIX Rover</h3>
+            <div>
+              <h3>ROS2 & AI — QBOTIX Rover</h3>
 
-            <p>
-              Worked as a ROS2 & AI member on autonomous navigation
-              and cone detection for the rover.
-            </p>
+              <p>
+                Worked as a ROS2 & AI member on autonomous navigation
+                and cone detection for the rover.
+              </p>
+            </div>
           </div>
 
           <div className="achievement-item">
-            <div className="achievement-icon">💻</div>
+            <div className="achievement-icon">AI/ML level -1 Engineer</div>
 
-            <h3>AI/ML Engineer — Level 1</h3>
+            <div>
+              <h3>AI/ML Engineer — Level 1</h3>
 
-            <p>
-              Recognition from iQube – Innovation Centre,
-              Kumaraguru College of Technology.
-            </p>
+              <p>
+                Recognition from iQube – Innovation Centre,
+                Kumaraguru College of Technology.
+              </p>
+            </div>
           </div>
 
           <div className="achievement-item">
-            <div className="achievement-icon">🚀</div>
+            <div className="achievement-icon">HACKGURU 2026</div>
 
-            <h3>HackGURU 2026</h3>
+            <div>
+              <h3>HackGURU 2026</h3>
 
-            <p>
-              Participated in HackGURU 2026 and worked on an
-              AI Event Quality Verification Scanner.
-            </p>
+              <p>
+                Participated in HackGURU 2026 and worked on an
+                AI Event Quality Verification Scanner.
+              </p>
+            </div>
           </div>
 
           <div className="achievement-item">
-            <div className="achievement-icon">⚡</div>
+            <div className="achievement-icon">Technoverse 2026</div>
 
-            <h3>Technoverse 2026</h3>
+            <div>
+              <h3>Technoverse 2026</h3>
 
-            <p>
-              Participated in the Grand Finale Hackathon and worked
-              on a Smart Billing & AI-Based Inventory Management System.
-            </p>
+              <p>
+                Participated in the Grand Finale Hackathon and worked
+                on a Smart Billing & AI-Based Inventory Management System.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -517,18 +533,6 @@ function App() {
               Oct 2025 – Apr 2026
               <br />
               Autonomous navigation and cone detection.
-            </p>
-          </div>
-
-          <div className="highlight-card">
-            <h3>
-              <i className="fas fa-users"></i> QBOTIX Rover
-            </h3>
-
-            <p>
-              <strong>Probationary Member</strong>
-              <br />
-              Sep 2025 – Oct 2025
             </p>
           </div>
         </div>
@@ -582,6 +586,22 @@ function App() {
 
           <div className="contact-links">
             <a
+              href="mailto:kavyaeswari7@gmail.com"
+              className="contact-link"
+            >
+              <i className="fas fa-envelope"></i>
+              Email
+            </a>
+
+            <a
+              href="tel:+919363727798"
+              className="contact-link"
+            >
+              <i className="fas fa-phone"></i>
+              Phone
+            </a>
+
+            <a
               href="https://github.com/KavyaSivakumar2006"
               target="_blank"
               rel="noreferrer"
@@ -604,11 +624,13 @@ function App() {
 
           <div className="email-highlight">
             <p>
-              <i className="fas fa-envelope"></i> Contact
+              <i className="fas fa-envelope"></i>{" "}
+              kavyaeswari7@gmail.com
             </p>
 
             <p>
-              Email details can be added here later.
+              <i className="fas fa-phone"></i>{" "}
+              +91 9363727798
             </p>
           </div>
         </div>
