@@ -1,4 +1,4 @@
-# Kavya S — Full Stack Portfolio
+# Kavya S — Portfolio
 
 A personal portfolio website built to showcase my projects, experience, skills, achievements, and certifications.
 
